@@ -5,7 +5,7 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 ## Alunos integrantes da equipe
 
 * Alexandre Costa e Souza
-* Joao Felipe
+* Joao Felipe Araujo
 * Pedro Henrique Machado
 
 
