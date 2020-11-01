@@ -1,0 +1,663 @@
+
+
+/*  MOBILE  */
+
+
+    
+    @media (max-width: 500px){
+        body{
+                margin: 0;
+                min-width: 250px;
+                background-color: rgb(230, 230, 230);
+               
+        }
+        a{
+            color: black;
+        }
+        .lupa{            
+            width: 30px;
+        }
+        /************/
+        
+        
+        /************/
+        /*  CABEÇALHO   */
+        
+        header{
+            display: grid;
+            grid-template-columns: 1fr  50px;
+            grid-template-rows: 1fr;
+            grid-template-areas: "a  c";
+            height:  60px;
+            background-color: white;
+            
+        }
+        header div{
+        grid-area: a;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-template-areas: ". .";
+        }
+        
+        .buscar_desktop{
+        display: none;
+        }
+        .logo{
+            height: 50px;
+            padding-right: 20px;
+        }
+        #BTN_menu_mobile{
+            grid-area: c;
+            width: 40px;
+        }
+        h1{
+            font-size: large;
+        }
+        /************/
+        
+        
+        /************/
+        /*  MENU   */
+        .menu_desktop{
+            display: none;
+        }
+        
+        
+        #M_mobile{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 250px;
+            grid-template-areas: ". a";
+            position: absolute;
+            z-index: 2;
+            
+        }
+        
+
+        .menu_mobile{
+            grid-area: a;
+            background-color: white;
+            border-bottom-left-radius: 10px;
+            
+            
+        }
+        .menu_mobile div{
+            margin-left: 20px;
+            height: 70px;
+        
+        }
+        .buscar{
+            width: 150px;
+        }
+        
+        
+        /************/
+        
+        
+        /************/
+        /*  CARROSSEL   */
+        .carrossel{
+            padding-top: 30px;
+            height: 300px;
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr ;
+         
+            grid-template-areas: "a";
+        }
+        .frame{
+            grid-area: a;
+            height: 100%;
+            width: 100%;
+            
+        
+        }
+        .frame img{
+          
+            height: 300px;
+            width: 100%;
+            z-index: -1;
+        }
+        .frame div{
+        
+        position: absolute;
+        margin-top:  -100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        z-index: 1;
+        
+        }
+        .frame a{
+            color: gray;
+        }
+        .carrossel_BTNs{
+            display: grid;
+            grid-template-columns: 60px 1fr 60px;
+            grid-template-rows: 1fr 60px 1fr;
+            gap: 1px 1px;
+            grid-template-areas: ". . ." "a . b" ". . .";
+            grid-area: a;
+            height: 300px;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+        #L{
+            opacity: 50%;
+            grid-area: a;
+            height: 60px;
+        }
+        #R{
+            opacity: 50%;
+            grid-area: b;
+            height: 60px;
+        }
+        /************/
+        
+        
+        /************/
+        /*  IMAGEN  */
+
+        
+        .imagem_categoria img{
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+        }
+        .imagem_categoria h2{
+            position: absolute;
+            margin-top: -270px;
+            font-size: xx-large;
+        }
+        /************/
+        
+        
+        /************/
+        /*  SOBRE NOS   */
+        .sobreN{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-color: white;
+            height: 300px;
+        }
+         /************/
+        
+        
+        /************/
+        /*  BUSCA   */
+        .busca{
+            margin-left: 5%;
+        }
+        /************/
+        
+        
+        /************/
+        /*  ARTIGO   */
+        .corpo_artigo{
+            
+            background-color: white;
+        }
+        .corpo_artigo img{
+            width: 100%;
+            height: 300px;
+        }
+
+        .autor{
+            padding-top: 20px;
+            display: grid;
+            gap: 20px;
+            grid-template-areas: "a b""a b";
+        }
+        .autor img{
+            grid-area: a;
+            width: 60px;
+            height: 60px;
+        }
+        
+        /************/
+        
+        
+        /************/
+        /*  COMENTARIOS   */
+        
+        .nome{
+            color: blue;
+        }
+        .comentar input{
+            border-style: none;
+        }
+        .comentar{
+            
+            margin-left: 5%;
+        }
+        .comentar div {
+            display: grid;
+            grid-template-areas: "a a"". b";
+            width: 90%;
+        }
+        .comentar div input{
+            grid-area: a;
+            height: 50px;
+        }
+        .comentar div button{
+            border-style: none;
+            background-color: rgb(199, 199, 199);
+            grid-area: b;
+            height: 25px;
+
+        }
+        .comentarios{
+            width: 90%;
+            margin-left: 5%;
+
+        }
+
+        .comentario{
+            margin-top: 20px;
+            background-color: white;
+
+        }
+        /************/
+        
+        
+        /************/
+        /*  ARTIGOS   */
+        .artigo{
+        margin-top: 20px;
+        margin-right: 10%;
+        width: 80%;
+        margin-left: 10%;
+        background-color: white;
+    
+        display: grid;
+        grid-template-columns:1fr 1fr  ;
+        grid-template-rows: 1fr  auto 40px ;
+        grid-template-areas: "a a ""b b ""c  d";
+        }
+        .nail_artigo{
+            grid-area: a;
+            height: 200px;
+            width: 100%;   
+        }
+        .artigo_titulo{
+            grid-area: b;
+        }
+        #data{
+            grid-area: c;
+        }
+        #comentarios{
+            grid-area: d;
+        }
+    
+        
+        /************/
+        
+        
+        /************/
+        footer{
+            background-color: black;
+            color: white;
+            display: grid;
+            grid-template-rows: 50px 1fr;
+            grid-template-areas: "a a""b c";
+            margin-top: 20px;
+        }
+    
+        .footer_a{
+            grid-area: a;
+        }
+        .footer_b{
+            grid-area: b;
+        }
+        .footer_c{
+            grid-area: c;
+        }
+        }
+
+        @media (min-width: 500px){
+            body{
+                    margin: 0;
+                    background-color: rgb(230, 230, 230);
+                   
+            }
+            a{
+                color: black;
+            }
+            .lupa{            
+                width: 30px;
+            }
+            main{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            /************/
+            
+            
+            /************/
+            /*  CABEÇALHO   */
+            
+            header{
+                display: grid;
+                grid-template-columns: 1fr  200px;
+                grid-template-rows: 1fr;
+                grid-template-areas: "a  c";
+                height:  auto;
+                background-color: white;
+                
+            }
+            header div{
+            grid-area: a;
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            grid-template-areas: ". .";
+            }
+            
+            .buscar_desktop{
+                grid-area: c;
+                display: inline;
+            }
+            .buscar{
+                width: 150px;
+            }
+            .logo{
+                height: 70px;
+                padding-right: 20px;
+            }
+            #BTN_menu_mobile{
+                display: none;
+            }
+            h1{
+                margin-left: 40px;
+                font-size: xx-large;
+            }
+            /************/
+            
+            
+            /************/
+            /*  MENU   */
+            .menu_desktop{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+            }
+            .menu_aba{
+                background-color: white;
+                height: 60px;
+            }
+            .menu_aba div{
+                margin-top: 10px;
+                margin-left: 20%;
+            }
+            .menu_aba:hover{
+                background-color: rgb(202, 202, 202);
+                align-items: center;
+            }
+           
+            
+            
+            /************/
+            
+            
+            /************/
+            /*  CARROSSEL   */
+            .carrossel{
+                padding-top: 30px;
+                height: 300px;
+                display: grid;
+                grid-template-columns: 1fr ;
+                grid-template-rows: 1fr ;
+                margin-bottom: 200px;
+                grid-template-areas: "a";
+            }
+            .carrossel h2{
+                font-size: xx-large;
+            }
+            .frame{
+                grid-area: a;
+                height: 100%;
+                width: 100%;
+                
+            
+            }
+            .frame img{
+              
+                height: 400px;
+                width: 100%;
+                z-index: -1;
+            }
+            .frame div{
+            
+            position: absolute;
+            margin-top:  -120px;
+            margin-left: 100px;
+            margin-right: 10px;
+            z-index: 1;
+            
+            }
+            .frame a{
+                color: gray;
+            }
+            .carrossel_BTNs{
+                display: grid;
+                grid-template-columns: 60px 1fr 60px;
+                grid-template-rows: 1fr 60px 1fr;
+                gap: 1px 1px;
+                grid-template-areas: ". . ." "a . b" ". . .";
+                grid-area: a;
+                height: 400px;
+                width: 70%;
+                margin-left: 5%;
+                position: absolute;
+                z-index: 1;
+            }
+            #L{
+                opacity: 50%;
+                grid-area: a;
+                height: 60px;
+            }
+            #L:hover{
+                opacity: 60%;
+            }
+            #R{
+                opacity: 50%;
+                grid-area: b;
+                height: 60px;
+            }
+            #R:hover{
+                opacity: 60%;
+            }
+            /************/
+            
+            
+            /************/
+            /*  IMAGEN  */
+    
+            
+            .imagem_categoria img{
+                width: 70%;
+                height: 300px;
+                margin-top: 20px;
+            }
+            .imagem_categoria h2{
+                position: absolute;
+                margin-top: -270px;
+                margin-left: 5%;
+                font-size: 3pc;
+            }
+            /************/
+            
+            
+            /************/
+            /*  SOBRE NOS   */
+            .sobreN{
+                margin-top: 50px;
+                margin-bottom: 100px;
+                width: 90%;
+                border-radius: 10px;
+                background-color: white;
+                height: 300px;
+            }/************/
+            
+            
+            /************/
+            /*  BUSCA   */
+            
+
+        /************/
+        
+        
+        /************/
+        /*  ARTIGO   */
+        .corpo_artigo{
+            
+            background-color: white;
+        }
+        .corpo_artigo img{
+            width: 80%;
+            margin-left: 10%;
+            height: 400px;
+        }
+        .corpo_artigo h2{
+            font-size: 2.3pc;
+        }
+        .autor{
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns:100px 1fr;
+            grid-template-areas: "a b""a b";
+        }
+        .autor img{
+            grid-area: a;
+            width: 80px;
+            height: 80px;
+        }
+        
+        /************/
+        
+        
+        /************/
+        /*  COMENTARIOS   */
+        
+        .nome{
+            color: blue;
+        }
+        .comentar input{
+            border-style: none;
+        }
+        
+        .comentar div {
+            display: grid;
+            grid-template-columns: 1fr 200px;
+            grid-template-areas: "a a"". b";
+            width: 90%;
+        }
+        .comentar div input{
+            grid-area: a;
+            height: 50px;
+        }
+        .comentar div button{
+            border-style: none;
+            background-color: rgb(199, 199, 199);
+            grid-area: b;
+            height: 25px;
+
+        }
+
+
+        .comentarios{
+            width: 90%;
+            
+
+        }
+
+        .comentario{
+            margin-top: 20px;
+            background-color: white;
+
+        }
+        
+            
+            /************/
+            
+            
+            /************/
+            /*  ARTIGOS   */
+            
+            .artigo{
+            margin-top: 20px;
+            margin-right: 10%;
+            width: 90%;
+            background-color: white;
+        
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr ;
+            grid-template-rows: 1fr  40px ;
+            gap: 10px;
+            grid-template-areas: "a b b""a c d";
+            }
+            .nail_artigo{
+                grid-area: a;
+                height: 120px;
+                width: 100%;   
+            }
+            .artigo_titulo{
+                grid-area: b;
+            }
+            #data{
+                grid-area: c;
+            }
+            #comentarios{
+                grid-area: d;
+            }
+        
+            
+            /************/
+            
+            
+            /************/
+            footer{
+                background-color: black;
+                color: white;
+                display: grid;
+                grid-template-rows: 50px 1fr;
+                grid-template-areas: "a a""b c";
+            }
+        
+            .footer_a{
+                grid-area: a;
+            }
+            .footer_b{
+                grid-area: b;
+            }
+            .footer_c{
+                grid-area: c;
+            }
+
+
+            @media (max-width: 700px){
+                .menu_desktop{
+                    grid-template-columns: 1fr 1fr 1fr 1fr ;
+                }
+                .menu_aba div{
+                    margin-top: 0;
+                }
+                .menu_desktop :nth-child(5){
+                    display: none;
+                }
+                
+                h1{
+                    margin-left: 40px;
+                    font-size: x-large;
+                }
+                .artigo{
+                    width: 100%;
+                }
+                .imagem_categoria img{
+                    width: 100%;
+                }
+            }
+            }
